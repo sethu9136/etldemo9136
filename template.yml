@@ -6,7 +6,7 @@ Resources:
       Role: !GetAtt GlueServiceRole.Arn
       Command:
         Name: glueetl
-        ScriptLocation: s3://mycodepipelinebucket9136/script/glue_script.py
+        ScriptLocation: s3://mycodepipelinebucket9136/script/etl.py
       DefaultArguments:
         "--TempDir": "s3://mycodepipelinebucket9136/temp/"
       GlueVersion: "2.0"
